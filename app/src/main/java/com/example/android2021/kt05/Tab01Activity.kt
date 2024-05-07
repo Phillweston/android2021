@@ -89,7 +89,7 @@ class Tab01Activity : AppCompatActivity() {
             }
         } ?:return
         val ft = supportFragmentManager.beginTransaction()
-        if (!fragment?.isAdded) {
+        if (fragment?.isAdded == false) {
             ft.add(R.id.container,fragment)
         }
         currentFragment?.let {

@@ -24,27 +24,32 @@
         <activity
             android:name=".kt05.ScrollingActivity"
             android:label="@string/title_activity_scrolling"
-            android:theme="@style/Theme.Android2021.NoActionBar"></activity>
+            android:theme="@style/Theme.Android2021.NoActionBar"
+            android:exported="true" />
         <activity
             android:name=".kt05.ContentProviderActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_content_provider"
-            android:theme="@style/Theme.Android2021" />
-        <activity android:name=".kt05.BroadcastActivity" />
+            android:theme="@style/Theme.Android2021"
+            android:exported="true" />
+        <activity android:name=".kt05.BroadcastActivity"
+            android:exported="true" />
 
         <service
             android:name=".kt05.TestService02"
             android:enabled="true"
             android:exported="true" />
 
-        <activity android:name=".kt05.TestServiceActivity" />
+        <activity android:name=".kt05.TestServiceActivity"
+            android:exported="true" />
 
         <service
             android:name=".kt05.TestService01"
             android:enabled="true"
             android:exported="true" />
 
-        <activity android:name=".kt05.Tab01Activity" />
+        <activity android:name=".kt05.Tab01Activity"
+            android:exported="true" />
     </application>
 
 </manifest>
